@@ -2,7 +2,7 @@ module.exports = {
   verbose: true,
   preset: 'jest-expo',
   coverageReporters: ['lcov', 'text', 'text-summary'],
-  testRegex: '(/src/.*\\.(test|spec))\\.(jsx?|tsx?)$',
+  testRegex: '(./src/.*\\.(test|spec))\\.tsx?$',
   setupFiles: ['<rootDir>/tests/setup.tsx'],
   transform: {
     '^.+\\.jsx?$': '<rootDir>/node_modules/babel-jest',

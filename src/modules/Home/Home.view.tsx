@@ -1,3 +1,4 @@
+import { ENV } from 'env-config'
 import { withTheme } from 'glamorous-native'
 import React, { SFC } from 'react'
 import { CenterView, Icon, Row, Screen, Text, View } from 'rnts-ui'
@@ -12,7 +13,7 @@ interface IProps {
 const HomeView: SFC<IProps> = ({ theme: { colors } }) => (
   <Screen>
     <CenterView>
-      <Text component="LabelText">HOME</Text>
+      <Text component="LabelText">{`ENV: ${ENV.toUpperCase()}`}</Text>
       <Text component="NormalText">{I18n.t('home.view.welcome')}</Text>
       <Row alignItems="center">
         <View marginRight={5}>

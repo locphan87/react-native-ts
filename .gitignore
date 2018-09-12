@@ -14,6 +14,7 @@ sha.json
 
 /coverage
 /app.json
+/build
 
 # Jest
 .jest/
