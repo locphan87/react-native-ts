@@ -1,0 +1,47 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+      "tslint:recommended",
+      "tslint-react",
+      "tslint-config-airbnb",
+      "tslint-config-prettier"
+    ],
+    "jsRules": {},
+    "rules": {
+      "import-name": false,
+      "no-unused-variable": false,
+      "no-unused": [true, "ignore-parameters"],
+      "early-exit": true,
+      "no-collapsible-if": true,
+      "no-unnecessary-else": true,
+      "no-return-undefined": true,
+      "no-static-this": true,
+      "no-unnecessary-type-annotation": true,
+      "no-var-before-return": true,
+      "no-unnecessary-local-variable": true,
+      "only-arrow-functions": true,
+      "ter-newline-after-var": [true, "always"],
+      "max-func-body-length": [true, {
+        "ignore-comments": true,
+        "func-body-length": 30,
+        "method-body-length": 50
+      }],
+      "cyclomatic-complexity": [true, 20],
+      "max-file-line-count": [true, 500],
+      "prefer-const": true,
+      "newline-before-return": true,
+      "prefer-method-signature": true,
+      "no-return-await": true,
+      "prefer-conditional-expression": true,
+      "variable-name": [
+        true,
+        "ban-keywords",
+        "check-format",
+        "allow-pascal-case",
+        "allow-leading-underscore"
+      ],
+      "member-ordering": false,
+      "object-literal-sort-keys": false
+    },
+    "rulesDirectory": []
+}

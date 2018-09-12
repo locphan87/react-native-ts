@@ -1,0 +1,19 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# expo
+.expo/
+sha.json
+
+# dependencies
+/node_modules
+
+# misc
+/.env
+*.log
+/environments/local/
+
+/coverage
+/app.json
+
+# Jest
+.jest/

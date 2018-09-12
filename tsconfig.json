@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": false,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "jsx": "react-native",
+    "lib": [
+      "dom",
+      "es2015",
+      "es2016",
+      "es2017"
+    ],
+    "module": "es2015",
+    "moduleResolution": "node",
+    "noEmitHelpers": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": false,
+    "noUnusedLocals": true,
+    "strictFunctionTypes": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "outDir": "build",
+    "sourceMap": true,
+    "strict": true,
+    "target": "es2017"
+  },
+  "types": [
+    "react",
+    "react-dom",
+    "react-native"
+  ],
+  "exclude":[
+    "build",
+    "node_modules",
+    "jest.config.js",
+    "App.js"
+  ]
+}

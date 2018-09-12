@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "Atlas driver",
+    "description": "Atlas driver",
+    "slug": "atlas-driver",
+    "sdkVersion": "29.0.0",
+    "orientation": "portrait",
+    "primaryColor": "#0294ff",
+    "scheme": "atlas-driver",
+    "notification": {
+      "color": "#0294ff",
+      "androidMode": "collapse",
+      "androidCollapsedTitle": "#{unread_notifications} new notifications"
+    },
+    "ios": {
+      "bundleIdentifier": "com.atlas.driver"
+    },
+    "android": {
+      "package": "com.atlas.driver",
+      "permissions": []
+    },
+    "androidStatusBar": {
+      "barStyle": "light-content",
+      "backgroundColor": "#ffffff"
+    },
+    "extra": {}
+  }
+}

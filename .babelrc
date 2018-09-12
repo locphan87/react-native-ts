@@ -1,0 +1,20 @@
+{
+  "presets": [
+    "babel-preset-expo"
+  ],
+  "plugins": [
+    ["dotenv-import", {
+      "moduleName": "env-config",
+      "path": ".env",
+      "blacklist": null,
+      "whitelist": null,
+      "safe": false,
+      "allowUndefined": true
+    }]
+  ],
+  "env": {
+    "development": {
+      "plugins": ["transform-react-jsx-source"]
+    }
+  }
+}

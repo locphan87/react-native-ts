@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "React native typescript",
+    "description": "React native typescript",
+    "slug": "react-native-ts",
+    "version": "0.0.1",
+    "sdkVersion": "29.0.0",
+    "orientation": "portrait",
+    "primaryColor": "#0294ff",
+    "scheme": "react-native-ts",
+    "packagerOpts": {
+      "sourceExts": ["ts", "tsx"],
+      "transformer": "node_modules/react-native-typescript-transformer/index.js"
+    },
+    "notification": {
+      "color": "#0294ff",
+      "androidMode": "collapse",
+      "androidCollapsedTitle": "#{unread_notifications} new notifications"
+    },
+    "ios": {
+      "bundleIdentifier": "com.reactNativeBoilerplate.ts"
+    },
+    "android": {
+      "package": "com.reactNativeBoilerplate.ts",
+      "permissions": []
+    },
+    "androidStatusBar": {
+      "barStyle": "dark-content",
+      "backgroundColor": "#ffffff"
+    },
+    "extra": {}
+  }
+}
