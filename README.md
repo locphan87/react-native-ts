@@ -111,7 +111,6 @@ $ yarn test:watch
 ```
 $ yarn test:coverage
 ```
-Check out https://pyco-group.gitlab.io/genvita/ to view the full coverage report on the `master` branch
 
 ##### Run tests every time code changes and generate code coverage report
 ```

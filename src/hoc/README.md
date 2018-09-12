@@ -11,13 +11,13 @@ const EnhancedComponent = higherOrderComponent(WrappedComponent);
 ## Code structure
 
 Naming convention:
-* HOC `<HOC_NAME>.hoc.js`
-* Test `<HOC_NAME>.hoc.test.js`
+* HOC `<HOC_NAME>.hoc.tsx`
+* Test `<HOC_NAME>.hoc.test.tsx`
 
 ```
 ./src/hoc/withUpdating
 ├── __snapshots__
-│   └── withUpdating.hoc.test.js.snap
-├── withUpdating.hoc.js
-└── withUpdating.hoc.test.js
+│   └── withUpdating.hoc.test.snap.tsx
+├── withUpdating.hoc.tsx
+└── withUpdating.hoc.test.tsx
 ```

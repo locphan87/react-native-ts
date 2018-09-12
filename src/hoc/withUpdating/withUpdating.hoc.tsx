@@ -2,7 +2,6 @@ import { equals } from 'ramda'
 import React from 'react'
 import { StyleSheet, View } from 'react-native'
 import { compose, withProps, withState } from 'recompose'
-import { colors } from 'rnts-ui'
 
 import LoadingMask from '../../components/LoadingMask/LoadingMask.component'
 
@@ -21,7 +20,7 @@ const styles = StyleSheet.create({
     flex: 1
   },
   updating: {
-    backgroundColor: colors.white,
+    backgroundColor: 'white',
     opacity: 0.7
   }
 })

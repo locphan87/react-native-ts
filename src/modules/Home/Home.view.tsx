@@ -3,8 +3,13 @@ import React, { SFC } from 'react'
 import { CenterView, Icon, Row, Screen, Text, View } from 'rnts-ui'
 
 import I18n from '../../i18n'
+import { ITheme } from '../../types'
 
-const HomeView: SFC<any> = ({ theme: { colors } }) => (
+interface IProps {
+  theme: ITheme
+}
+
+const HomeView: SFC<IProps> = ({ theme: { colors } }) => (
   <Screen>
     <CenterView>
       <Text component="LabelText">HOME</Text>
