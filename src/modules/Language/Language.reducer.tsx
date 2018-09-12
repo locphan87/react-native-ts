@@ -8,7 +8,7 @@ const types = {
 }
 const actions = createActions(types.SET_LANGUAGE)
 
-const initialState: string = I18n.currentLocale()
+const initialState = I18n.currentLocale()
 const reducer = typeToReducer(
   {
     [types.SET_LANGUAGE]: (state, action) => action.payload

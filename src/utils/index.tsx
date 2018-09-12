@@ -1,2 +1,4 @@
 export * from './common.util'
-export * from './handler.util'
+export * from './platform.util'
+export * from './redux.util'
+export * from './test.util'
