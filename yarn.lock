@@ -7940,9 +7940,9 @@ rimraf@~2.4.0:
   dependencies:
     glob "^6.0.1"
 
-"rnts-ui@https://github.com/phanhoangloc/rnts-ui.git#master":
-  version "1.0.0"
-  resolved "https://github.com/phanhoangloc/rnts-ui.git#8c86baede1c1c8f59551b6f167bab324ac780dcf"
+"rnts-ui@https://github.com/phanhoangloc/rnts-ui.git#v1.0.3":
+  version "1.0.3"
+  resolved "https://github.com/phanhoangloc/rnts-ui.git#23cfcad44da5e9815a93cdf9bbbf433ed72cf222"
 
 rst-selector-parser@^2.2.3:
   version "2.2.3"

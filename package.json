@@ -97,7 +97,7 @@
     "redux-promise-middleware": "5.1.1",
     "redux-thunk": "^2.3.0",
     "reselect": "3.0.1",
-    "rnts-ui": "https://github.com/phanhoangloc/rnts-ui.git#master",
+    "rnts-ui": "https://github.com/phanhoangloc/rnts-ui.git#v1.0.3",
     "seamless-immutable": "7.1.4",
     "type-to-reducer": "1.1.0"
   }

@@ -1,6 +1,6 @@
-import { fontello, fontMaps } from 'rnts-ui'
 import { AppLoading, Font } from 'expo'
 import React, { Component } from 'react'
+import { fontello, fontMaps } from 'rnts-ui'
 
 const { font: iconPackFont, name: iconPackName } = fontello
 const cacheIcons = () => Font.loadAsync({ [iconPackName]: iconPackFont })

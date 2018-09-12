@@ -1,6 +1,6 @@
-import { View } from 'rnts-ui'
 import { pathEq, propEq } from 'ramda'
 import { branch, renderComponent } from 'recompose'
+import { View } from 'rnts-ui'
 
 import LoadingMask from '../../components/LoadingMask/LoadingMask.component'
 

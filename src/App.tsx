@@ -1,10 +1,10 @@
 import ApolloClient from 'apollo-boost'
-import { colors, fonts } from 'rnts-ui'
 import { GRAPHQL_ENDPOINT, HIDE_WARNINGS } from 'env-config'
 import { ThemeProvider } from 'glamorous-native'
 import React from 'react'
 import { ApolloProvider } from 'react-apollo'
 import { Provider } from 'react-redux'
+import { colors, fonts } from 'rnts-ui'
 
 import withAssetsLoading from './hoc/withAssetsLoading/withAssetsLoading.hoc'
 import Navigator from './modules/Navigation'
