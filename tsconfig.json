@@ -5,6 +5,10 @@
     "forceConsistentCasingInFileNames": true,
     "importHelpers": true,
     "jsx": "react-native",
+    "typeRoots": [
+      "node_modules/@types",
+      "./typings/index.d.ts"
+    ],
     "lib": [
       "dom",
       "es2015",
@@ -16,7 +20,7 @@
     "noEmitHelpers": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
-    "noImplicitAny": true,
+    "noImplicitAny": false,
     "strictNullChecks": true,
     "noUnusedLocals": true,
     "strictFunctionTypes": true,

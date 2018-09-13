@@ -50,6 +50,7 @@
     "prettier": "prettier --write 'src/**/*.{ts,tsx}'",
     "setup": "make setup",
     "start": "make start",
+    "typecheck": "tsc --project tsconfig.json --noEmit --skipLibCheck",
     "lint": "tslint --project tsconfig.json --config tslint.json 'src/**/*.{ts,tsx}'",
     "lint:fix": "yarn lint --fix",
     "eject": "react-native-scripts eject",
