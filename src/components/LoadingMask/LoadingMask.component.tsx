@@ -10,8 +10,8 @@ interface IProps {
 }
 
 const { Container } = Components
-const LoadingMask: SFC<IProps> = ({ type }) => (
-  <Container type={type}>
+const LoadingMask: SFC<IProps> = ({ type, style }) => (
+  <Container type={type} style={style}>
     <ActivityIndicator size="large" />
   </Container>
 )

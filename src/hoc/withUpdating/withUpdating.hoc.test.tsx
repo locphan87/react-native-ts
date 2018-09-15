@@ -3,7 +3,10 @@ import { View } from 'react-native'
 
 import { testSnapshots } from '../../utils/test.util'
 
-import withUpdating, { simulatePending, withUpdating } from './withUpdating.hoc'
+import withUpdatingConfig, {
+  simulatePending,
+  withUpdating
+} from './withUpdating.hoc'
 
 jest
   .mock(
