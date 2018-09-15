@@ -37,6 +37,7 @@
   ],
   "exclude":[
     "build",
+    "./src/__mocks__",
     "node_modules",
     "jest.config.js",
     "App.js"

@@ -6,9 +6,16 @@ import Immutable from 'seamless-immutable'
 import I18n from '../../i18n'
 import { actions } from '../../modules/Language/Language.reducer'
 import { insertIf } from '../../utils'
-import renderWhen from '../renderWhen/renderWhen.hoc'
+import renderWhen, { IRenderWhen } from '../renderWhen/renderWhen.hoc'
 import withLoading, { withLoadingCreator } from '../withLoading/withLoading.hoc'
 import withUpdating from '../withUpdating/withUpdating.hoc'
+
+interface IWithApp {
+  loading?: boolean
+  updates?: string[]
+  renderWhen?: IRenderWhen[]
+  loadingPredicate?(): boolean
+}
 
 const mapStateToProps = state => ({
   language: state.language
@@ -22,7 +29,7 @@ const withApp = ({
   updates = [],
   renderWhen: renderWhenOptions = [],
   loadingPredicate // custom predicate for loading state
-} = {}) => WrappedComponent => {
+}: IWithApp = {}) => WrappedComponent => {
   const enhancers = Immutable([
     connect(
       mapStateToProps,

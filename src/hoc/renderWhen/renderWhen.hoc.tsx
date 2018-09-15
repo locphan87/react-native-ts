@@ -2,9 +2,14 @@ import { branch, compose, renderComponent, renderNothing } from 'recompose'
 
 import Constants from '../../constants'
 
-const renderWhen = states =>
+interface IRenderWhen {
+  render: any
+  when(): boolean
+}
+
+const renderWhen = (states: IRenderWhen[]) =>
   compose(
-    ...states.map(({ when, render }) => {
+    ...states.map(({ when, render }: IRenderWhen) => {
       const component =
         render === Constants.NOTHING ? renderNothing : renderComponent(render)
 
@@ -12,4 +17,5 @@ const renderWhen = states =>
     })
   )
 
+export { IRenderWhen }
 export default renderWhen

@@ -1,8 +1,8 @@
 export * from './enum'
 
 interface ITheme {
-  colors: {}
-  fonts: {}
+  colors: any
+  fonts: any
 }
 
 export { ITheme }
