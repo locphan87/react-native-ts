@@ -1,6 +1,8 @@
 # React Native TS
 > A feature oriented react native boilerplate, bootstrapped by [CRNA](https://github.com/react-community/create-react-native-app), using functional patterns and tools
 
+![screenshot](screenshot.png)
+
 - [React Native TS](#react-native-ts)
   - [tltr;](#tltr)
   - [Contents](#contents)
