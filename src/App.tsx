@@ -4,7 +4,7 @@ import { ThemeProvider } from 'glamorous-native'
 import React from 'react'
 import { ApolloProvider } from 'react-apollo'
 import { Provider } from 'react-redux'
-import { colors, fonts } from 'rnts-ui'
+import { colors, fonts, size } from 'rnts-ui'
 
 import withAssetsLoading from './hoc/withAssetsLoading/withAssetsLoading.hoc'
 import Navigator from './modules/Navigation'
@@ -20,7 +20,17 @@ const { store, persistor } = createStore()
 const client = new ApolloClient({
   uri: GRAPHQL_ENDPOINT
 })
-const theme = { colors, fonts }
+const theme = {
+  colors,
+  fonts,
+  size: {
+    ...size,
+    label: 12,
+    normal: 14,
+    medium: 16,
+    title: 18
+  }
+}
 
 const App = () => (
   <Provider store={store}>
