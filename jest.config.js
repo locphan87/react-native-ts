@@ -5,7 +5,7 @@ module.exports = {
   testRegex: '(./src/.*\\.(test|spec))\\.tsx?$',
   setupFiles: ['<rootDir>/tests/setup.tsx'],
   transform: {
-    '^.+\\.jsx?$': '<rootDir>/node_modules/babel-jest',
+    '^.+\\.jsx?$': 'babel-jest',
     '^.+\\.tsx?$': 'ts-jest'
   },
   testPathIgnorePatterns: ['<rootDir>/node_modules/'],
@@ -14,12 +14,16 @@ module.exports = {
     '(style|story).tsx',
     './tests/setup.tsx',
     './src/themes/',
-    'index.tsx',
-    'index.js'
+    './src/hoc/',
+    'index.tsx'
   ],
   globals: {
     'ts-jest': {
-      useBabelrc: true
+      tsConfig: './tsconfig.jest.json',
+      babelConfig: {
+        presets: ['babel-preset-expo']
+      },
+      diagnostics: false
     }
   },
   snapshotSerializers: ['enzyme-to-json/serializer'],

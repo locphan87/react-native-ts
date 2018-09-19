@@ -4,7 +4,7 @@
     "description": "React native typescript",
     "slug": "react-native-ts",
     "version": "0.0.1",
-    "sdkVersion": "29.0.0",
+    "sdkVersion": "30.0.0",
     "orientation": "portrait",
     "primaryColor": "#0294ff",
     "scheme": "react-native-ts",
