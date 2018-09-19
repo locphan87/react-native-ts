@@ -7404,9 +7404,9 @@ react-native-vector-icons@4.5.0:
     prop-types "^15.5.10"
     yargs "^8.0.2"
 
-react-native@0.55.1:
-  version "0.55.1"
-  resolved "http://registry.npmjs.org/react-native/-/react-native-0.55.1.tgz#0ca06b3e1bcb8ddfb56b916a3853d423f9ee6439"
+"react-native@https://github.com/expo/react-native/archive/sdk-30.0.0.tar.gz":
+  version "0.55.4"
+  resolved "https://github.com/expo/react-native/archive/sdk-30.0.0.tar.gz#17d148956ad91ab745fdca830ac3d193564fce5c"
   dependencies:
     absolute-path "^0.0.0"
     art "^0.10.0"
@@ -7462,7 +7462,6 @@ react-native@0.55.1:
     serve-static "^1.13.1"
     shell-quote "1.6.1"
     stacktrace-parser "^0.1.3"
-    whatwg-fetch "^1.0.0"
     ws "^1.1.0"
     xcode "^0.9.1"
     xmldoc "^0.4.0"
@@ -9218,10 +9217,6 @@ whatwg-encoding@^1.0.1, whatwg-encoding@^1.0.3:
 whatwg-fetch@>=0.10.0:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-2.0.3.tgz#9c84ec2dcf68187ff00bc64e1274b442176e1c84"
-
-whatwg-fetch@^1.0.0:
-  version "1.1.1"
-  resolved "http://registry.npmjs.org/whatwg-fetch/-/whatwg-fetch-1.1.1.tgz#ac3c9d39f320c6dce5339969d054ef43dd333319"
 
 whatwg-fetch@^2.0.4:
   version "2.0.4"
