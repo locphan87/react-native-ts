@@ -5,10 +5,10 @@ describe('module Language', () => {
     test('should change language', () => {
       const actual = reducer(undefined, {
         type: 'SET_LANGUAGE',
-        payload: 'vi'
+        payload: 'en'
       })
 
-      expect(actual).toEqual('vi')
+      expect(actual).toEqual('en')
     })
   })
 })

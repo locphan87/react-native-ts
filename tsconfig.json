@@ -35,6 +35,9 @@
     "react-dom",
     "react-native"
   ],
+  "include": [
+    "src/**/*"
+  ],
   "exclude":[
     "build",
     "./src/__mocks__",
