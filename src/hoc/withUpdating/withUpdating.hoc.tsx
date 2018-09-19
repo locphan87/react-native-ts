@@ -1,5 +1,5 @@
 import { equals } from 'ramda'
-import React from 'react'
+import * as React from 'react'
 import { StyleSheet, View } from 'react-native'
 import { compose, withProps, withState } from 'recompose'
 

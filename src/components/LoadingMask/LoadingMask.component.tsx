@@ -1,4 +1,4 @@
-import React, { SFC } from 'react'
+import * as React from 'react'
 import { ActivityIndicator } from 'react-native'
 
 import { LoadingType } from '../../types'
@@ -10,7 +10,7 @@ interface IProps {
 }
 
 const { Container } = Components
-const LoadingMask: SFC<IProps> = ({ type, style }) => (
+const LoadingMask: React.SFC<IProps> = ({ type, style }) => (
   <Container type={type} style={style}>
     <ActivityIndicator size="large" />
   </Container>
