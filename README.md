@@ -12,20 +12,15 @@ Table of Contents
    * [Requirements](#requirements)
    * [Installation](#installation)
 * [Development workflow](#development-workflow)
-   * [Run application](#run-application)
-      * [Open the application in iOS simulator](#open-the-application-in-ios-simulator)
-      * [Open the application in Android simulator](#open-the-application-in-android-simulator)
-   * [Test application](#test-application)
-      * [Run unit tests](#run-unit-tests)
-      * [Run tests every time code changes](#run-tests-every-time-code-changes)
-      * [Generate code coverage report](#generate-code-coverage-report)
-      * [Run tests every time code changes and generate code coverage report](#run-tests-every-time-code-changes-and-generate-code-coverage-report)
+   * [Run the app](#run-the-app)
+   * [Test the app](#test-the-app)
 * [Debugging](#debugging)
 * [Deployment](#deployment)
    * [Login to Expo](#login-to-expo)
    * [Publish to Expo](#publish-to-expo)
    * [Make a new release](#make-a-new-release)
 * [Licensing](#licensing)
+
 
 ## tltr;
 
@@ -102,25 +97,25 @@ $ yarn android
 
 ### Test the app
 
-#### Run unit tests
+* Run unit tests
 
 ```bash
 $ yarn test
 ```
 
-#### Run tests every time code changes
+* Run tests every time code changes
 
 ```bash
 $ yarn test:watch
 ```
 
-#### Generate code coverage report
+* Generate code coverage report
 
 ```bash
 $ yarn test:coverage
 ```
 
-#### Run tests every time code changes and generate code coverage report
+* Run tests every time code changes and generate code coverage report
 
 ```bash
 $ yarn test:wc
