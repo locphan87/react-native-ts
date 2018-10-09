@@ -2,18 +2,20 @@
 
 # expo
 .expo/
-sha.json
 
 # dependencies
 /node_modules
 
-# misc
+# config files
 /.env
-*.log
-/environments/local/
-
-/coverage
 /app.json
+/sha.json
+
+# misc
+*.log
+
+# generated files
+/coverage
 /build
 
 # Jest

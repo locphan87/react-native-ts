@@ -7,17 +7,3 @@ Concretely, a higher-order component is a function that takes a component and re
 ```js
 const EnhancedComponent = higherOrderComponent(WrappedComponent);
 ```
-
-## Code structure
-
-Naming convention:
-* HOC `<HOC_NAME>.hoc.tsx`
-* Test `<HOC_NAME>.hoc.test.tsx`
-
-```
-./src/hoc/withUpdating
-├── __snapshots__
-│   └── withUpdating.hoc.test.snap.tsx
-├── withUpdating.hoc.tsx
-└── withUpdating.hoc.test.tsx
-```

@@ -31,11 +31,11 @@ Table of Contents
 
 Sounds good and you just want to see how it works? Here is a quick start guide:
 
-```
-git clone https://github.com/phanhoangloc/react-native-ts
-cd react-native-ts
-yarn install
-yarn ios
+```bash
+$ git clone https://github.com/phanhoangloc/react-native-ts
+$ cd react-native-ts
+$ yarn install
+$ yarn start
 ```
 
 ## Architecture
@@ -55,11 +55,14 @@ Before you get started, make sure you have the following dependencies installed 
 $ npm install -g react-native-cli
 ```
 
-* Expo CLI
+* [Expo CLI](https://docs.expo.io/versions/latest/introduction/installation#local-development-tool-expo-cli)
 
 ```bash
-$ npm install -g exp
+$ npm install -g expo-cli
 ```
+
+* [Expo client for iOS simulator](https://docs.expo.io/versions/latest/introduction/installation#ios-simulator)
+* [Expo client for Android emulator](https://docs.expo.io/versions/latest/introduction/installation#android-emulator)
 
 ### Installation
 
@@ -75,50 +78,51 @@ $ yarn install
 $ yarn setup
 ```
 
-* [Expo client for iOS simulator](https://docs.expo.io/versions/latest/introduction/installation#ios-simulator)
-* [Expo client for Android emulator](https://docs.expo.io/versions/latest/introduction/installation#android-emulator)
-
 ## Development workflow
 
-### Run application
+### Run the app
 
-#### Open the application in iOS simulator
+* Start a local server for your app
 
+```bash
+$ yarn start
 ```
+
+* Opens your app in Expo in a currently running iOS simulator on your computer
+
+```bash
 $ yarn ios
 ```
 
-#### Open the application in Android simulator
+* Opens your app in Expo on a connected Android device
 
-(If using the stock emulator, the emulator must be running)
-
-```
+```bash
 $ yarn android
 ```
 
-### Test application
+### Test the app
 
 #### Run unit tests
 
-```
+```bash
 $ yarn test
 ```
 
 #### Run tests every time code changes
 
-```
+```bash
 $ yarn test:watch
 ```
 
 #### Generate code coverage report
 
-```
+```bash
 $ yarn test:coverage
 ```
 
 #### Run tests every time code changes and generate code coverage report
 
-```
+```bash
 $ yarn test:wc
 ```
 
@@ -128,18 +132,19 @@ It's quite slow to watch file changes and then generate code coverage report. De
 
 For standard debugging select *Debug JS Remotely* from the React Native Development context menu (To open the context menu, press *CMD+D* in iOS or *D+D* in Android). This will open a new Chrome tab under [http://localhost:8081/debugger-ui](http://localhost:8081/debugger-ui) and prints all actions to the console.
 
-For advanced debugging under **macOS** we suggest using the standalone [React Native Debugger](https://github.com/jhen0409/react-native-debugger), which is based on the official debugger of React Native.
+For advanced debugging under **MacOS** we suggest using the standalone [React Native Debugger](https://github.com/jhen0409/react-native-debugger), which is based on the official debugger of React Native.
 It includes the React Inspector and Redux DevTools so you can inspect React views and get a detailed history of the Redux state.
 
 You can install it via [brew](https://brew.sh/) and run it as a standalone app:
 
-```
+```bash
 $ brew update && brew cask install react-native-debugger
 ```
 
-Open React Native Debugger on a different port (i.e 19001)
-```
-$ open "rndebugger://set-debugger-loc?host=localhost&port=19001"
+Open React Native Debugger on a different port (i.e 19002)
+
+```bash
+$ open "rndebugger://set-debugger-loc?host=localhost&port=19002"
 ```
 
 > Note: Make sure you close all active chrome debugger tabs and then restart the debugger from the React Native Development context menu.
@@ -147,11 +152,12 @@ $ open "rndebugger://set-debugger-loc?host=localhost&port=19001"
 ## Deployment
 
 ### Login to Expo
+
 Make sure to login to the **correct** account
 
 ```bash
-$ exp login
-$ exp whoami // check the current user
+$ expo login
+$ expo whoami // check the current user
 ```
 
 ### Publish to Expo

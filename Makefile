@@ -16,27 +16,27 @@ update-sha:
 
 start:
 	make setup-env
-	exp start -c --lan
+	expo start -c --lan
 
 run-ios:
 	make setup-env
-	exp start -c --lan --ios
+	expo start -c --lan --ios
 
 run-android:
 	make setup-env
-	exp start -c --lan --android
+	expo start -c --lan --android
 
 deploy-expo:
 	make setup-env
 	make update-sha
-	exp publish -c --release-channel $(CHANNEL)
+	expo publish -c --release-channel $(CHANNEL)
 
 build-android:
 	make setup-env
 	make update-sha
-	exp build:android --release-channel $(CHANNEL)
+	expo build:android --release-channel $(CHANNEL)
 
 build-ios:
 	make setup-env
 	make update-sha
-	exp build:ios --release-channel $(CHANNEL)
+	expo build:ios --release-channel $(CHANNEL)
