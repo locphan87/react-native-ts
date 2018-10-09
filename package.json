@@ -42,6 +42,7 @@
     "validate-commit": "3.4.0"
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
+  "types": "./typings/index.d.ts",
   "scripts": {
     "commitmsg": "validate-commit-msg",
     "server": "json-server --watch ./data.json",
