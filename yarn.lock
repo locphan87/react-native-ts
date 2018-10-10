@@ -7199,6 +7199,15 @@ react-native-gesture-handler@1.0.6:
     invariant "^2.2.2"
     prop-types "^15.5.10"
 
+react-native-hocs@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/react-native-hocs/-/react-native-hocs-0.0.2.tgz#8fffadb04852594a2ce7e9aa7d390da64ff0a51d"
+  integrity sha512-S9qr7uHk7ixsXMXUzvMLC6rsBPZX7eV8pxBHXewmsOHj0d66YmHS63SHF4vdI14X3reqIy3mbHrpXZxTiHjg/w==
+  dependencies:
+    insert-if "1.1.0"
+    ramda-adjunct "2.10.0"
+    recompose "0.30.0"
+
 react-native-i18n@2.0.15:
   version "2.0.15"
   resolved "https://registry.yarnpkg.com/react-native-i18n/-/react-native-i18n-2.0.15.tgz#09b5a9836116fa7dbd0054c46e2d1014c1ef3c65"
@@ -7564,7 +7573,7 @@ realpath-native@^1.0.0:
   dependencies:
     util.promisify "^1.0.0"
 
-recompose@^0.30.0:
+recompose@0.30.0, recompose@^0.30.0:
   version "0.30.0"
   resolved "https://registry.yarnpkg.com/recompose/-/recompose-0.30.0.tgz#82773641b3927e8c7d24a0d87d65aeeba18aabd0"
   integrity sha512-ZTrzzUDa9AqUIhRk4KmVFihH0rapdCSMFXjhHbNrjAWxBuUD/guYlyysMnuHjlZC/KRiOKRtB4jf96yYSkKE8w==

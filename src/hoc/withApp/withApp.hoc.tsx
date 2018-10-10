@@ -1,22 +1,13 @@
-import insertIf from 'insert-if'
-import { isFunction, isNonEmptyArray } from 'ramda-adjunct'
+import { pathEq } from 'ramda'
+import { withAppCreator } from 'react-native-hocs'
 import { connect } from 'react-redux'
 import { compose, lifecycle } from 'recompose'
-import Immutable from 'seamless-immutable'
 
+import LoadingMask from '../../components/LoadingMask/LoadingMask.component'
 import I18n from '../../i18n'
 import { actions } from '../../modules/Language/Language.reducer'
-import renderWhen, { IRenderWhen } from '../renderWhen/renderWhen.hoc'
-import withLoading, { withLoadingCreator } from '../withLoading/withLoading.hoc'
-import withUpdating from '../withUpdating/withUpdating.hoc'
 
-interface IWithApp {
-  loading?: boolean
-  updates?: string[]
-  renderWhen?: IRenderWhen[]
-  loadingPredicate?(): boolean
-}
-
+const isDataLoading = pathEq(['data', 'loading'], true)
 const mapStateToProps = state => ({
   language: state.language
 })
@@ -24,13 +15,8 @@ const mapDispatchToProps = {
   setLanguage: actions.setLanguage
 }
 
-const withApp = ({
-  loading = false,
-  updates = [],
-  renderWhen: renderWhenOptions = [],
-  loadingPredicate // custom predicate for loading state
-}: IWithApp = {}) => WrappedComponent => {
-  const enhancers = Immutable([
+const withApp = params =>
+  compose(
     connect(
       mapStateToProps,
       mapDispatchToProps
@@ -43,20 +29,10 @@ const withApp = ({
         I18n.locale = language
       }
     }),
-    ...insertIf(
-      loading && isFunction(loadingPredicate),
-      withLoadingCreator(loadingPredicate)
-    ),
-    ...insertIf(loading && !isFunction(loadingPredicate), withLoading),
-    ...insertIf(isNonEmptyArray(updates), withUpdating(updates)),
-    ...insertIf(
-      isNonEmptyArray(renderWhenOptions),
-      renderWhen(renderWhenOptions)
-    )
-  ])
+    withAppCreator({
+      LoadingComponent: LoadingMask,
+      loadingPredicate: isDataLoading
+    })(params)
+  )
 
-  return compose(...enhancers)(WrappedComponent)
-}
-
-export { mapStateToProps }
-export default withApp
+export { withApp }

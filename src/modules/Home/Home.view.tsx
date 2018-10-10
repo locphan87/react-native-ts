@@ -46,7 +46,7 @@ const HomeView: SFC<IProps> = ({
       </Row>
     </CenterView>
     <Row justifyContent="center" paddingBottom={20}>
-      <View marginRight={10}>
+      <View marginRight={20}>
         <Text
           onPress={ON_CHANGE_LANGUAGE('en')}
           component="NormalText"
@@ -56,14 +56,16 @@ const HomeView: SFC<IProps> = ({
           {'EN'}
         </Text>
       </View>
-      <Text
-        onPress={ON_CHANGE_LANGUAGE('vi')}
-        component="NormalText"
-        size={16}
-        style={getActiveStyle(language === 'vi')}
-      >
-        {'VI'}
-      </Text>
+      <View>
+        <Text
+          onPress={ON_CHANGE_LANGUAGE('vi')}
+          component="NormalText"
+          size={16}
+          style={getActiveStyle(language === 'vi')}
+        >
+          {'VI'}
+        </Text>
+      </View>
     </Row>
   </ExpandView>
 )
