@@ -11,7 +11,6 @@ import Navigator from './modules/Navigation'
 import createStore from './redux/createStore'
 
 import { PersistGate } from 'redux-persist/integration/react'
-import { onNavigationStateChange } from './modules/Navigation/Navigation.util'
 
 if (HIDE_WARNINGS) {
   console.disableYellowBox = true // tslint:disable-line
@@ -41,7 +40,7 @@ const App = () => (
     <ThemeProvider theme={theme}>
       <PersistGate loading={null} persistor={persistor}>
         <ApolloProvider client={client}>
-          <Navigator onNavigationStateChange={onNavigationStateChange} />
+          <Navigator />
         </ApolloProvider>
       </PersistGate>
     </ThemeProvider>
