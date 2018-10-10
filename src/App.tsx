@@ -15,6 +15,9 @@ import { PersistGate } from 'redux-persist/integration/react'
 if (HIDE_WARNINGS) {
   console.disableYellowBox = true // tslint:disable-line
 }
+if (__DEV__) {
+  console.ignoredYellowBox = ['react-native-i18n module is not correctly link'] // tslint:disable-line
+}
 
 const { store, persistor } = createStore()
 const client = new ApolloClient({

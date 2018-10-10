@@ -1,6 +1,7 @@
 import { ENV } from 'env-config'
 import { withTheme } from 'glamorous-native'
 import React, { SFC } from 'react'
+import { StatusBar } from 'react-native'
 import { CenterView, ExpandView, Icon, Row, Text, View } from 'rnts-ui'
 
 import Constants from '../../constants'
@@ -25,6 +26,7 @@ const HomeView: SFC<IProps> = ({
   theme: { colors }
 }) => (
   <ExpandView>
+    <StatusBar hidden={true} />
     <View height={80} paddingHorizontal={20} justifyContent="center">
       <HeaderTitle>HOME</HeaderTitle>
       <HeaderBackground source={{ uri: Constants.BG_IMAGE }} />
@@ -43,7 +45,7 @@ const HomeView: SFC<IProps> = ({
         </Text>
       </Row>
     </CenterView>
-    <Row justifyContent="center" paddingVertical={10}>
+    <Row justifyContent="center" paddingBottom={20}>
       <View marginRight={10}>
         <Text
           onPress={ON_CHANGE_LANGUAGE('en')}
