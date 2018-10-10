@@ -5957,10 +5957,10 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
-match-values@0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/match-values/-/match-values-0.0.1.tgz#4f9d938f0ce6741c19dfba6dd24ca3df74cc36ac"
-  integrity sha512-P6LbX8k4r+cwguC2IbYlt0g7vux+N8rdrBTON5hMDR45SE9PggwzegRA+vPdKwGCdW09z7Vmc+VuUPIpj5J3bA==
+match-values@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/match-values/-/match-values-1.0.0.tgz#4a6cef55b18f699b91d20d733a06f24236730eea"
+  integrity sha512-PdyU3ZXkISWM/oqlYzhiivHbByqFjKUyO8lKdxqJkFa+7j//m/T7bDyAFLk8tR5LGrGN1kUedmo7cEzNi0sqXw==
 
 md5-file@^3.2.3:
   version "3.2.3"
