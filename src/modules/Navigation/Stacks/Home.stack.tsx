@@ -22,6 +22,7 @@ const NoStatusBarRoutes = [Routes.Home.Home]
 const { BACK, NAVIGATE, INIT } = NavigationActions
 const allowedActions = [INIT, NAVIGATE, BACK]
 
+// TODO replace this by onNavigationChange
 HomeStack.router.getStateForAction = (action, state) => {
   const { routeName, type } = action
   const newState = defaultGetStateForAction(action, state)

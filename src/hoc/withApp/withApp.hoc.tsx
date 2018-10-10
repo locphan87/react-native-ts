@@ -1,3 +1,4 @@
+import insertIf from 'insert-if'
 import { isFunction, isNonEmptyArray } from 'ramda-adjunct'
 import { connect } from 'react-redux'
 import { compose, lifecycle } from 'recompose'
@@ -5,7 +6,6 @@ import Immutable from 'seamless-immutable'
 
 import I18n from '../../i18n'
 import { actions } from '../../modules/Language/Language.reducer'
-import { insertIf } from '../../utils'
 import renderWhen, { IRenderWhen } from '../renderWhen/renderWhen.hoc'
 import withLoading, { withLoadingCreator } from '../withLoading/withLoading.hoc'
 import withUpdating from '../withUpdating/withUpdating.hoc'

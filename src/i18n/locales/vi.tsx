@@ -1,3 +1,3 @@
 export default {
-  'home.view.welcome': 'VI - Welcome to React Native TS'
+  'home.view.welcome': 'Chào mừng đến với React Native TS'
 }

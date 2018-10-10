@@ -1,4 +1,4 @@
-const NOTHING = 'Nothing'
+const NOTHING = 'NOTHING'
 
 export default {
   NOTHING,

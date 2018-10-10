@@ -10,10 +10,20 @@ import Components from './Home.view.style'
 
 interface IProps {
   theme: ITheme
+  ON_CHANGE_LANGUAGE(lang: string): () => void
+  language: string
 }
 
+const getActiveStyle = isActive => ({
+  color: isActive ? '#f5a623' : '#42436a',
+  textDecorationLine: isActive ? 'underline' : 'none'
+})
 const { HeaderTitle, HeaderBackground } = Components
-const HomeView: SFC<IProps> = ({ theme: { colors } }) => (
+const HomeView: SFC<IProps> = ({
+  ON_CHANGE_LANGUAGE,
+  language,
+  theme: { colors }
+}) => (
   <ExpandView>
     <View height={80} paddingHorizontal={20} justifyContent="center">
       <HeaderTitle>HOME</HeaderTitle>
@@ -33,6 +43,26 @@ const HomeView: SFC<IProps> = ({ theme: { colors } }) => (
         </Text>
       </Row>
     </CenterView>
+    <Row justifyContent="center" paddingVertical={10}>
+      <View marginRight={10}>
+        <Text
+          onPress={ON_CHANGE_LANGUAGE('en')}
+          component="NormalText"
+          size={16}
+          style={getActiveStyle(language === 'en')}
+        >
+          {'EN'}
+        </Text>
+      </View>
+      <Text
+        onPress={ON_CHANGE_LANGUAGE('vi')}
+        component="NormalText"
+        size={16}
+        style={getActiveStyle(language === 'vi')}
+      >
+        {'VI'}
+      </Text>
+    </Row>
   </ExpandView>
 )
 
