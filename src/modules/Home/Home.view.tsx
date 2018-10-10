@@ -43,7 +43,7 @@ const HomeView: SFC<IProps> = ({
         </Text>
       </Row>
     </CenterView>
-    <Row justifyContent="center" paddingVertical={10}>
+    <Row justifyContent="center" paddingBottom={20}>
       <View marginRight={10}>
         <Text
           onPress={ON_CHANGE_LANGUAGE('en')}
