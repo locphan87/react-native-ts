@@ -1,8 +1,15 @@
-export * from './enum'
-
 interface ITheme {
-  colors: any
-  fonts: any
+  fonts: {
+    [fontName: string]: {
+      [fontStyle: string]: any
+    }
+  }
+  colors: {
+    [colorName: string]: string
+  }
+  size: {
+    [sizeName: string]: number
+  }
 }
 
 export { ITheme }

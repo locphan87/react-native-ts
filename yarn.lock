@@ -802,10 +802,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/redux-actions@^2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@types/redux-actions/-/redux-actions-2.3.0.tgz#d28d7913ec86ee9e20ecb33a1fed887ecb538149"
-  integrity sha512-N5gZT7Tg5HGRbQH56D6umLhv1R4koEFjfz5+2TFo/tjAz3Y3Aj+hjQBum3UUO4D53hYO439UlWP5Q+S63vujrQ==
+"@types/redux-actions@^2.3.1":
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/@types/redux-actions/-/redux-actions-2.3.1.tgz#b574569d76df9a0963c421bf509bcf2d0c6b17d3"
+  integrity sha512-MMI9LtIn1lotGOJ45PPCXB3ksn0jxditnqSOZjs7gnFCB1o5UagFtnSNkaJ4dWioNKdTPh08hddj/Hh1aPaoRA==
 
 "@types/redux-promise-middleware@^0.0.11":
   version "0.0.11"
@@ -7211,10 +7211,10 @@ react-native-gesture-handler@1.0.6:
     invariant "^2.2.2"
     prop-types "^15.5.10"
 
-react-native-hocs@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/react-native-hocs/-/react-native-hocs-0.0.3.tgz#84db5ab22facd408a979a3ee14a58628c2b040be"
-  integrity sha512-lWeylBUXMJozqtfTzggzIf4qFVonUHLlH91OmTRD1A2x0yhcD4fLoDY/XvkAs5btoZuwA8kjKDlF66pR0jQSdg==
+react-native-hocs@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/react-native-hocs/-/react-native-hocs-0.0.4.tgz#2242fce899007f99391ec082abf27a4407d6b6f3"
+  integrity sha512-nikcd+Wji7+gxcn8nMFZNugpbt1ex6qxzQzq/jaXezAY5uo2BrAYj2A0s3yL4JCZEbP61Tzm2YeUdypQbEhxaw==
   dependencies:
     insert-if "1.1.0"
     ramda-adjunct "2.10.0"
@@ -7915,9 +7915,9 @@ rimraf@~2.2.6:
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.2.8.tgz#e439be2aaee327321952730f99a8929e4fc50582"
   integrity sha1-5Dm+Kq7jJzIZUnMPmaiSnk/FBYI=
 
-"rnts-ui@https://github.com/phanhoangloc/rnts-ui.git#v1.0.6":
-  version "1.0.6"
-  resolved "https://github.com/phanhoangloc/rnts-ui.git#2f31da3ded70c8b9b49c912b56e44eb526f79b17"
+"rnts-ui@https://github.com/phanhoangloc/rnts-ui.git#v1.0.8":
+  version "1.0.8"
+  resolved "https://github.com/phanhoangloc/rnts-ui.git#bdc2c33f04e36353a070e0e5f15f223b56ca3366"
 
 rst-selector-parser@^2.2.3:
   version "2.2.3"

@@ -17,7 +17,7 @@
     "@types/react-redux": "6.0.9",
     "@types/react-test-renderer": "16.0.3",
     "@types/recompose": "^0.27.0",
-    "@types/redux-actions": "^2.3.0",
+    "@types/redux-actions": "^2.3.1",
     "@types/redux-promise-middleware": "^0.0.11",
     "@types/seamless-immutable": "^7.1.2",
     "babel-preset-react-native": "4.0.1",
@@ -90,7 +90,7 @@
     "react": "16.3.1",
     "react-apollo": "2.2.4",
     "react-native": "https://github.com/expo/react-native/archive/sdk-30.0.0.tar.gz",
-    "react-native-hocs": "^0.0.3",
+    "react-native-hocs": "^0.0.4",
     "react-native-i18n": "2.0.15",
     "react-navigation": "2.18.0",
     "react-redux": "^5.0.6",
@@ -101,7 +101,7 @@
     "redux-promise-middleware": "5.1.1",
     "redux-thunk": "^2.3.0",
     "reselect": "4.0.0",
-    "rnts-ui": "https://github.com/phanhoangloc/rnts-ui.git#v1.0.6",
+    "rnts-ui": "https://github.com/phanhoangloc/rnts-ui.git#v1.0.8",
     "seamless-immutable": "7.1.4",
     "type-to-reducer": "1.1.0"
   }
