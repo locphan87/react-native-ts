@@ -15,7 +15,7 @@ const mapDispatchToProps = {
   setLanguage: actions.setLanguage
 }
 
-const withApp = params =>
+const withApp = (params = {}) =>
   compose(
     connect(
       mapStateToProps,
@@ -30,7 +30,7 @@ const withApp = params =>
       }
     }),
     withAppCreator({
-      LoadingComponent: LoadingMask,
+      loadingComponent: LoadingMask,
       loadingPredicate: isDataLoading
     })(params)
   )
